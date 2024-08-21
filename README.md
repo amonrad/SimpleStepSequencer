@@ -37,32 +37,35 @@ Ensure that you place the SimpleStepSequencer folder within this directory path 
 
 The Source Code is organized as follows: 
 
-src/
-├── Main.cpp
-├── ofApp.h
-├── ofApp.cpp
-├── factory.h
-├── factory.cpp
-├── GuiHandling/
-│   ├── guiManager.h
-│   ├── guiManager.cpp
-│   ├── customGui.h
-│   ├── customGui.cpp
-│   ├── sequencerGui.h
-│   ├── sequencerGui.cpp
-├── Instruments/
-│   ├── instrument.h          # Abstract base class
-│   ├── musicPlayer.h
-│   ├── musicPlayer.cpp
-│   ├── sampleInstrument.h
-│   ├── sampleInstrument.cpp
-│   ├── midiInstrument.h
-│   ├── midiInstrument.cpp
-├── AudioHandling/
-│   ├── audioManager.h
-│   ├── audioManager.cpp
-│   ├── metronome.h
-│   ├── metronome.cpp
+### src
+- **Main.cpp**
+- **ofApp.h**
+- **ofApp.cpp**
+- **factory.h**
+- **factory.cpp**
+
+### GuiHandling
+- **guiManager.h**
+- **guiManager.cpp**
+- **customGui.h**
+- **customGui.cpp**
+- **sequencerGui.h**
+- **sequencerGui.cpp**
+
+### Instruments
+- **instrument.h**: Abstract base class
+- **musicPlayer.h**
+- **musicPlayer.cpp**
+- **sampleInstrument.h**
+- **sampleInstrument.cpp**
+- **midiInstrument.h**
+- **midiInstrument.cpp**
+
+### AudioHandling
+- **audioManager.h**
+- **audioManager.cpp**
+- **metronome.h**
+- **metronome.cpp**
 
 
 ## Installation
@@ -121,7 +124,7 @@ Example:
 
 ```bash
 ./SimpleStepSequencer --input "midi_device" --output "sound_stream"
-``
+```
 
 ## Contributing
 
